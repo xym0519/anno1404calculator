@@ -13,7 +13,7 @@
 + (XXDataManager *)instance {
     static XXDataManager *dm;
     if (!dm) {
-        dm = [[XXDataManager alloc] init];
+        dm = [[XXDataManager alloc] init:@"data.sqlite"];
     }
     return dm;
 }

@@ -54,9 +54,7 @@
 		079BA75E17C6329F0014554A /* XXDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 079BA75817C6329F0014554A /* XXDataManager.m */; };
 		079BA75F17C6329F0014554A /* XXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079BA75A17C6329F0014554A /* XXViewController.m */; };
 		079BA76017C6329F0014554A /* XXViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079BA75B17C6329F0014554A /* XXViewController.xib */; };
-		079BA77D17C632A60014554A /* XXDataManagerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 079BA76F17C632A60014554A /* XXDataManagerBase.m */; };
 		079BA77E17C632A60014554A /* XXNumberPadExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 079BA77417C632A60014554A /* XXNumberPadExtension.m */; };
-		079BA77F17C632A60014554A /* XXSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 079BA77717C632A60014554A /* XXSystem.m */; };
 		079BA78317C638E30014554A /* XXCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079BA78117C638E30014554A /* XXCalculatorViewController.m */; };
 		079BA78417C638E30014554A /* XXCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079BA78217C638E30014554A /* XXCalculatorViewController.xib */; };
 		07C3139917C3D49F00E7C9BC /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C3139817C3D49F00E7C9BC /* icon114.png */; };
@@ -120,13 +118,8 @@
 		079BA75917C6329F0014554A /* XXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXViewController.h; sourceTree = "<group>"; };
 		079BA75A17C6329F0014554A /* XXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXViewController.m; sourceTree = "<group>"; };
 		079BA75B17C6329F0014554A /* XXViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XXViewController.xib; sourceTree = "<group>"; };
-		079BA76E17C632A60014554A /* XXDataManagerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDataManagerBase.h; sourceTree = "<group>"; };
-		079BA76F17C632A60014554A /* XXDataManagerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDataManagerBase.m; sourceTree = "<group>"; };
-		079BA77117C632A60014554A /* XXLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXLog.h; sourceTree = "<group>"; };
 		079BA77317C632A60014554A /* XXNumberPadExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNumberPadExtension.h; sourceTree = "<group>"; };
 		079BA77417C632A60014554A /* XXNumberPadExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNumberPadExtension.m; sourceTree = "<group>"; };
-		079BA77617C632A60014554A /* XXSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXSystem.h; sourceTree = "<group>"; };
-		079BA77717C632A60014554A /* XXSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXSystem.m; sourceTree = "<group>"; };
 		079BA78017C638E30014554A /* XXCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCalculatorViewController.h; sourceTree = "<group>"; };
 		079BA78117C638E30014554A /* XXCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCalculatorViewController.m; sourceTree = "<group>"; };
 		079BA78217C638E30014554A /* XXCalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XXCalculatorViewController.xib; sourceTree = "<group>"; };
@@ -271,29 +264,9 @@
 		079BA76117C632A60014554A /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				079BA76D17C632A60014554A /* XXDao */,
-				079BA77017C632A60014554A /* XXLog */,
 				079BA77217C632A60014554A /* XXNumberPadExtension */,
-				079BA77517C632A60014554A /* XXUtils */,
 			);
 			path = Libs;
-			sourceTree = "<group>";
-		};
-		079BA76D17C632A60014554A /* XXDao */ = {
-			isa = PBXGroup;
-			children = (
-				079BA76E17C632A60014554A /* XXDataManagerBase.h */,
-				079BA76F17C632A60014554A /* XXDataManagerBase.m */,
-			);
-			path = XXDao;
-			sourceTree = "<group>";
-		};
-		079BA77017C632A60014554A /* XXLog */ = {
-			isa = PBXGroup;
-			children = (
-				079BA77117C632A60014554A /* XXLog.h */,
-			);
-			path = XXLog;
 			sourceTree = "<group>";
 		};
 		079BA77217C632A60014554A /* XXNumberPadExtension */ = {
@@ -303,15 +276,6 @@
 				079BA77417C632A60014554A /* XXNumberPadExtension.m */,
 			);
 			path = XXNumberPadExtension;
-			sourceTree = "<group>";
-		};
-		079BA77517C632A60014554A /* XXUtils */ = {
-			isa = PBXGroup;
-			children = (
-				079BA77617C632A60014554A /* XXSystem.h */,
-				079BA77717C632A60014554A /* XXSystem.m */,
-			);
-			path = XXUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,9 +420,7 @@
 				079BA75D17C6329F0014554A /* XXAppDelegate.m in Sources */,
 				079BA75E17C6329F0014554A /* XXDataManager.m in Sources */,
 				079BA75F17C6329F0014554A /* XXViewController.m in Sources */,
-				079BA77D17C632A60014554A /* XXDataManagerBase.m in Sources */,
 				079BA77E17C632A60014554A /* XXNumberPadExtension.m in Sources */,
-				079BA77F17C632A60014554A /* XXSystem.m in Sources */,
 				079BA78317C638E30014554A /* XXCalculatorViewController.m in Sources */,
 				0724EC3617C71C5000677610 /* XXCalculateResultViewController.m in Sources */,
 				0724EC3B17C7623400677610 /* XXAboutViewController.m in Sources */,
